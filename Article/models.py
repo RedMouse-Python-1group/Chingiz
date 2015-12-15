@@ -33,5 +33,5 @@ class Image(models.Model):
     class Meta:
         db_table = 'images'
 
-    image = models.ImageField(upload_to="images")
+    image = models.ImageField(upload_to="images", help_text="Do not add too large pics, please")
     images_article = models.ForeignKey(Article)
