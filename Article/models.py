@@ -19,7 +19,8 @@ class Article(models.Model):
     def __unicode__(self):
         return self.article_title
 
-class Comments(models.Model):
+
+class Comment(models.Model):
     class Meta:
         db_table = 'comments'
 
