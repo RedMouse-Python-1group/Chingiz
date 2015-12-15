@@ -27,3 +27,11 @@ class Comment(models.Model):
     comments_text = models.TextField()
     comments_date = models.DateField()
     comments_article = models.ForeignKey(Article)
+
+
+class Image(models.Model):
+    class Meta:
+        db_table = 'images'
+
+    image = models.ImageField(upload_to="images")
+    images_article = models.ForeignKey(Article)
