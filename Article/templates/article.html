@@ -6,7 +6,7 @@
 {% block content %}
     <h6>Дата публикации: {{ article.article_date }}</h6>
     <h4>{{ article.article_title }}</h4>
-    <p>{{ article.article_text }}</p>
+    <p>{{ article.article_text|safe }}</p>
     <p>Понравилось: {{ article.article_likes }}</p>
     <hr>
     <p>Комментарии: </p>
