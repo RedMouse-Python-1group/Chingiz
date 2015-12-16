@@ -11,3 +11,9 @@ li a {
     text-align: justify;
     padding-right: 70px;
 }
+
+#add_comment_button {
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}

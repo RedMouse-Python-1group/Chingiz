@@ -25,7 +25,6 @@ class Comment(models.Model):
         db_table = 'comments'
 
     comments_text = models.TextField()
-    comments_date = models.DateField()
     comments_article = models.ForeignKey(Article)
 
 

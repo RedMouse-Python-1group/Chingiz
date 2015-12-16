@@ -12,11 +12,6 @@ class ArticleAdmin(admin.ModelAdmin):
     list_filter = ['article_date']
     inlines = [ArticleInline]
 
-
-class CommentAdmin(admin.ModelAdmin):
-    list_filter = ['comments_date']
-
-
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Comment, CommentAdmin)
+admin.site.register(Comment)
 
