@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Article',
+    'loginsys',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -59,6 +60,7 @@ TEMPLATES = [
         'DIRS': [
             '/home/chyngyz/Blog/Blog/MyBlog/templates',
             '/home/chyngyz/Blog/Blog/MyBlog/Article/templates',
+            '/home/chyngyz/Blog/Blog/MyBlog/loginsys/templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {

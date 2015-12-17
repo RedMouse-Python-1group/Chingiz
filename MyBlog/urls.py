@@ -21,6 +21,7 @@ import Article
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('Article.urls')),
+    url(r'^auth/', include('loginsys.urls')),
 
 
 
