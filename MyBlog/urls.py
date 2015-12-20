@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-import Article
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('Article.urls')),
+    url(r'^tinymce', include('tinymce.urls')),
     url(r'^auth/', include('loginsys.urls')),
+    url(r'^', include('Article.urls')),
 
 
 

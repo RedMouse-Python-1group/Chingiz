@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Article',
     'loginsys',
+    'tinymce',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -58,9 +59,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/chyngyz/Blog/Blog/MyBlog/templates',
-            '/home/chyngyz/Blog/Blog/MyBlog/Article/templates',
-            '/home/chyngyz/Blog/Blog/MyBlog/loginsys/templates'
+            '/home/chyngyz/Projects/Blog/Chingiz/templates',
+            '/home/chyngyz/Projects/Blog/Chingiz/Article/templates',
+            '/home/chyngyz/Projects/Blog/Chingiz/loginsys/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -125,11 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 
-MEDIA_ROOT = '/home/chyngyz/Blog/Blog/MyBlog/uploads'
+MEDIA_ROOT = '/home/chyngyz/Projects/Blog/Chingiz/uploads'
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    ('static', '/home/chyngyz/Blog/Blog/MyBlog/static')
+    ('static', '/home/chyngyz/Projects/Blog/Chingiz/static')
 ]
 
