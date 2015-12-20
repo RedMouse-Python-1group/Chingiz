@@ -2,6 +2,8 @@ from __future__ import unicode_literals
 
 from django.contrib.auth.models import User
 from django.db import models
+from tinymce import models as tinymce_models
+
 
 # Create your models here.
 
@@ -10,8 +12,8 @@ class Article(models.Model):
     class Meta:
         db_table = 'article'
 
-    article_title = models.CharField(max_length=200)
-    article_text = models.TextField()
+    article_title = tinymce_models.HTMLField(max_length=200)
+    article_text = tinymce_models.HTMLField()
     article_date = models.DateField()
     article_user = models.ForeignKey(User)
     article_likes = models.IntegerField(default=0)
@@ -24,7 +26,7 @@ class Comment(models.Model):
     class Meta:
         db_table = 'comments'
 
-    comments_text = models.TextField()
+    comments_text = tinymce_models.HTMLField()
     comments_article = models.ForeignKey(Article)
 
 

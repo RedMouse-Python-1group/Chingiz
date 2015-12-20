@@ -6,7 +6,7 @@
 
 {% block content %}
     <h6>Publication date : {{ article.article_date }}</h6>
-    <h4>{{ article.article_title }}</h4>
+    <h4>{{ article.article_title|safe }}</h4>
     <p>{{ article.article_text|safe }}</p>
     <p><a href="/articles/addlike/{{ article.id }}/"><img src="{% static "img/FacebookLikeCropped.jpg" %} " height="25px" width="50px"></a> {{ article.article_likes }}</p>
     <hr>
@@ -23,7 +23,7 @@
     {% endif %}
     <p>Comments: </p>
     {% for comment in comments %}
-        <p>{{ comment.comments_text }}</p>
+        <p>{{ comment.comments_text|safe }}</p>
     {% endfor %}
 
 

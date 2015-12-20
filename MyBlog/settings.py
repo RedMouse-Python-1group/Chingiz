@@ -134,3 +134,11 @@ STATICFILES_DIRS = [
     ('static', '/home/chyngyz/Projects/Blog/Chingiz/static')
 ]
 
+TINYMCE_JS_ROOT = os.path.join(MEDIA_ROOT, "/home/chyngyz/Projects/Blog/Chingiz/tinymce//static/tiny_mce.js")
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': "table,spellchecker,paste,searchreplace",
+    'theme': "advanced",
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 10,
+}
