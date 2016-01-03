@@ -7,7 +7,6 @@ from django.core.context_processors import csrf
 def login(request):
     args = {}
     args.update(csrf(request))
-    print "test"
     if request.POST:
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')

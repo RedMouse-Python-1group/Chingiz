@@ -3,8 +3,6 @@ from __future__ import unicode_literals
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 from django.db import models
-from loginza.conf import settings
-
 from tinymce import models as tinymce_models
 
 
@@ -39,3 +37,4 @@ class Image(models.Model):
 
     image = models.ImageField(upload_to="uploads", help_text="Do not add too large pics, please")
     images_article = models.ForeignKey(Article)
+
